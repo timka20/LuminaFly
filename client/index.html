@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/luminafly-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuminaFly - Инновационная система освещения</title>
+    <meta name="description" content="LuminaFly - автоматизированная система управления дронами-лампами для умного города" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.ymapsReady = false;
+      function ymapsOnLoad() {
+        console.log('Yandex Maps API script loaded');
+        window.ymapsReady = true;
+      }
+      function ymapsOnError() {
+        console.error('Yandex Maps API failed to load');
+        window.ymapsLoadError = true;
+      }
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=59787275-126a-4d08-b438-e13e027d01c9&lang=ru_RU&onload=ymapsOnLoad&onerror=ymapsOnError" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
